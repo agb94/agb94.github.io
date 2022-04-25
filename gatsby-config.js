@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `GBlog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Gabin An`,
+      summary: `I like building new things, reading, riding a roadbike, and raising plants at home 🌱.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://agb94.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      instagram: `hi.gabin`,
     },
   },
   plugins: [
@@ -89,6 +89,7 @@ module.exports = {
               {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: {frontmatter: {show: {eq: true}}}
                 ) {
                   nodes {
                     excerpt

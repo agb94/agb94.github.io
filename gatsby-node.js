@@ -12,8 +12,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
+          sort: {fields: [frontmatter___date], order: ASC}
           limit: 1000
+          filter: {frontmatter: {show: {eq: true}}}
         ) {
           nodes {
             id
@@ -106,6 +107,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      show: Boolean
     }
 
     type Fields {
