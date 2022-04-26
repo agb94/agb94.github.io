@@ -34,18 +34,14 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/gabin-pic.png"
-        width={100}
-        height={100}
+        width={80}
+        height={80}
         quality={100}
         alt="Profile picture"
       />
       {author?.name && (
         <p>
           My name is <strong>{author.name}</strong>. {author?.summary || null}
-          {` `}
-          <br></br>
-          {` `}
-          Please contact me via: <a href={`mailto:${author.email}`}>{author.email}</a>
         </p>
       )}
     </div>

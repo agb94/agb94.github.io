@@ -1,10 +1,12 @@
 ---
 title: New Beginnings
 date: "2022-04-26T13:40:32.169Z"
+description: 👆 Check out my first blog post!
 show: true
 ---
 
-This is my first post on this new blog. 😋 How exciting!
+This is my first post on this new blog. How exciting! 😋
+
 To make this blog, I used [Gatsby](https://www.gatsbyjs.com/).
 It is pretty easy to make a website with Gatsby because there are plenty of
 great starter packs. I used one of the most popular themes:

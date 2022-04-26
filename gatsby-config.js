@@ -1,10 +1,15 @@
+const { NONAME } = require("dns")
+
 module.exports = {
   siteMetadata: {
     title: `Gabin An 🪴`,
     author: {
       name: `Gabin An`,
-      summary: `I'm currently a PhD candidate at COINSE Lab, KAIST. I like building new things, reading, riding a roadbike, and raising plants at home 😏`,
-      email: `hi.gabin@gmail.com`
+      summary: `I'm a third-year PhD student at COINSE Lab, KAIST. I like building new things, reading, riding a roadbike, and raising plants at home 😏`,
+      email: `hi.gabin@gmail.com`,
+      github: `agb94`,
+      website: `https://coinse.io/members/gabin`,
+      cv: ``
     },
     description: `Gabin's (virtual) home`,
     siteUrl: `https://agb94.github.io/`,

@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
+import Info from "../components/info"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -14,6 +15,7 @@ const BlogIndex = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <Seo title="Home" />
         <Bio />
+        <Info />
         <p>
           No blog posts found 🥲.
         </p>
@@ -25,6 +27,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Home" />
       <Bio />
+      <Info />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug

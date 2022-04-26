@@ -247,7 +247,7 @@ a:focus {
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-10);
 }
 
 .global-header {
@@ -298,8 +298,28 @@ a:focus {
 .bio-avatar {
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
-  min-width: 100px;
+  min-width: 80px;
   border-radius: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-16);
+}
+
+.info .item{
+  margin-bottom: var(--spacing-0);
+  margin-right: var(--spacing-1);
+}
+
+.info .item a{
+  color: var(--color-text);
+}
+
+.info .item a:hover{
+  color: var(--color-primary);
+  font-weight: var(--fontWeight-extrabold);
 }
 
 .blog-post header h1 {
