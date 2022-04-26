@@ -25,7 +25,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Made by Gabin, Powered by Gatsby
+        © {new Date().getFullYear()}, Made by Gabin 🤍, Powered by Gatsby
       </footer>
     </div>
   )

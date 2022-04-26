@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `GBlog`,
+    title: `Gabin An 🪴`,
     author: {
       name: `Gabin An`,
-      summary: `I like building new things, reading, riding a roadbike, and raising plants at home 🌱.`,
+      summary: `I'm currently a PhD candidate at COINSE Lab, KAIST. I like building new things, reading, riding a roadbike, and raising plants at home 😏`,
+      email: `hi.gabin@gmail.com`
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Gabin's (virtual) home`,
     siteUrl: `https://agb94.github.io/`,
     social: {
       instagram: `hi.gabin`,
@@ -50,7 +51,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        icon: `${__dirname}/images/plant.png`
+      }
+    },
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
@@ -114,15 +120,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Gabin's Blog`,
+        short_name: `GBlog`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#2d904e`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/plant.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,

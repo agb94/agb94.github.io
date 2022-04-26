@@ -17,9 +17,7 @@ const Bio = () => {
           author {
             name
             summary
-          }
-          social {
-            instagram
+            email
           }
         }
       }
@@ -28,7 +26,6 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
 
   return (
     <div className="bio">
@@ -36,7 +33,7 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.jpg"
+        src="../images/gabin-pic.png"
         width={100}
         height={100}
         quality={100}
@@ -47,11 +44,8 @@ const Bio = () => {
           My name is <strong>{author.name}</strong>. {author?.summary || null}
           {` `}
           <br></br>
-          Follow me on
           {` `}
-          <a href={`https://instagram.com/${social?.instagram || ``}`}>
-            Instagram! 
-          </a>
+          Please contact me via: <a href={`mailto:${author.email}`}>{author.email}</a>
         </p>
       )}
     </div>
