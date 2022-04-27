@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/gatsby/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Gabin An 🪴"}},"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"This is my first post on this new blog. How exciting! 😋 To make this blog, I used Gatsby.\nIt is pretty easy to make a website with Gatsby…","fields":{"slug":"/beginning/"},"frontmatter":{"title":"New Beginnings","date":"April 26, 2022","description":"👆 Check out my first blog post!"}}}]}},"pageContext":{"tag":"gatsby"}},
+    "staticQueryHashes": []}
