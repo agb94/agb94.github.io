@@ -44,11 +44,33 @@ Here are [the changes](https://github.com/agb94/agb94.github.io/tree/develop) th
 
 ###### 5. Deploy your website with GitHub Pages
 First, you need to create a new repository on GitHub.
-The repository name should be `<your-github-id>.github.io`.
+The repository name should be `<your-github-id>.github.io` (this will be the url for your website).
 ```shell
 git init .
 git remote add origin https://github.com/<your-github-id>/<your-github-id>.github.io
 npm install gh-pages --save-dev
-gatsby build
-gh-pages -d public -b main # it deploys the contents in the 'public' directory to the main branch
 ```
+
+Next, add the deploy command `gatsby build && gh-pages -d public -b main` to `package.json`.
+You can use any branch name other than `main`.
+
+```json
+"scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b main", # add this!
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+}
+```
+
+Finally, this command will automatically deploy your blog to GitHub Pages with
+GitHub actions. This may take up a few minutes.
+```shell
+npm run deploy
+```
+
+Enjoy!
