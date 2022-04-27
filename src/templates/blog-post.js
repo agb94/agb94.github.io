@@ -24,7 +24,7 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <tags>
+          <div class="tags">
             { post.frontmatter.tags
               && post.frontmatter.tags.length > 0
               && (<p class='title'>Tags</p>) }
@@ -32,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
               post.frontmatter.tags && post.frontmatter.tags.map(tag =>
                 <Link to={`/tags/${kebabCase(tag)}`} class='tag'>🌱 {tag}</Link>)
             }
-          </tags>
+          </div>
           <br />
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>

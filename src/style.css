@@ -331,11 +331,11 @@ a:focus {
   font-family: var(--font-heading);
 }
 
-.blog-post tags {
+.tags {
   display: block;
 }
 
-.blog-post tags .title {
+.tags .title {
   font-style: italic;
   display: inline-flex;
   font-size: var(--fontSize-0);
@@ -343,7 +343,7 @@ a:focus {
   margin: var(--spacing-1);
 }
 
-.blog-post tags .tag {
+.tags .tag {
   display: inline-flex;
   border-radius: 0%;
   border: 1px var(--color-primary) solid;
