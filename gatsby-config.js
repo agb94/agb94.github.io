@@ -5,7 +5,7 @@ module.exports = {
     title: `Gabin An 🪴`,
     author: {
       name: `Gabin An`,
-      summary: `I'm a third-year PhD student at COINSE Lab, KAIST. I like building new things, reading, riding a roadbike, and raising plants at home 😏`,
+      summary: `I'm a third-year PhD student at COINSE Lab, KAIST. I like building new things, reading, riding a roadbike, and raising plants at home. 😏`,
       email: `hi.gabin@gmail.com`,
       github: `agb94`,
       website: `https://coinse.io/members/gabin`,
@@ -59,7 +59,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
-        icon: `${__dirname}/images/plant.png`
+        // icon: `${__dirname}/images/plant.png`
       }
     },
     // {
