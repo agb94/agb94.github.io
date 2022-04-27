@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Gabin's (virtual) home]]></description><link>https://agb94.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 Apr 2022 08:35:54 GMT</lastBuildDate><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[This is my first post on this new blog. How exciting! 😋 To make this blog, I used Gatsby.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Gabin's (virtual) home]]></description><link>https://agb94.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 27 Apr 2022 01:03:56 GMT</lastBuildDate><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[This is my first post on this new blog. How exciting! 😋 To make this blog, I used Gatsby.
 It is pretty easy to make a website with Gatsby…]]></description><link>https://agb94.github.io/beginning/</link><guid isPermaLink="false">https://agb94.github.io/beginning/</guid><pubDate>Tue, 26 Apr 2022 13:40:32 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on this new blog. How exciting! 😋&lt;/p&gt;
 &lt;p&gt;To make this blog, I used &lt;a href=&quot;https://www.gatsbyjs.com/&quot;&gt;Gatsby&lt;/a&gt;.
 It is pretty easy to make a website with Gatsby because there are plenty of
@@ -8,37 +8,27 @@ great starter packs. I used one of the most popular themes:
 &lt;ul&gt;
 &lt;li&gt;Prerequisite: &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Enable &lt;a href=&quot;https://github.com/nodejs/corepack&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;corepack&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h6&gt;1. Enable &lt;a href=&quot;https://github.com/nodejs/corepack&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;corepack&lt;/code&gt;&lt;/a&gt;&lt;/h6&gt;
 &lt;blockquote&gt;
-&lt;p&gt;What is corepack? It is a zero-runtime-dependency Node.js script that comes
+&lt;p&gt;Corepack is a zero-runtime-dependency Node.js script that comes
 with the installation of Node.js.
 If you enable corepack, you can use &lt;code class=&quot;language-text&quot;&gt;Yarn&lt;/code&gt;, a JavaScript package manager.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;corepack &lt;span class=&quot;token builtin class-name&quot;&gt;enable&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;Install &lt;code class=&quot;language-text&quot;&gt;gatsby-cli&lt;/code&gt; using &lt;code class=&quot;language-text&quot;&gt;yarn&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h6&gt;2. Install &lt;code class=&quot;language-text&quot;&gt;gatsby-cli&lt;/code&gt; using &lt;code class=&quot;language-text&quot;&gt;yarn&lt;/code&gt;&lt;/h6&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;yarn&lt;/span&gt; global &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; gatsby-cli&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;Create a new project with a pre-made template.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h6&gt;3. Create a new project with a pre-made template.&lt;/h6&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;gatsby new &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-blog-name&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; https://github.com/gatsbyjs/gatsby-starter-blog
 &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-blog-name&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
 gatsby develop &lt;span class=&quot;token comment&quot;&gt;# run the development server&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You can now check out your blog at &lt;a href=&quot;http://localhost:8000/&quot;&gt;http://localhost:8000/&lt;/a&gt;.&lt;/p&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;Customize your website&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Have no clue? 🤪&lt;/p&gt;
-&lt;p&gt;Check out &lt;a href=&quot;https://github.com/agb94/agb94.github.io/tree/develop&quot;&gt;what changes&lt;/a&gt; I made to this website.&lt;/p&gt;
-&lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;Deploy your website with GitHub Pages&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h6&gt;4. Customize your website&lt;/h6&gt;
+&lt;p&gt;Have no clue?
+Here are &lt;a href=&quot;https://github.com/agb94/agb94.github.io/tree/develop&quot;&gt;the changes&lt;/a&gt; that I made to this website.&lt;/p&gt;
+&lt;h6&gt;5. Deploy your website with GitHub Pages&lt;/h6&gt;
 &lt;p&gt;First, you need to create a new repository on GitHub.
 The repository name should be &lt;code class=&quot;language-text&quot;&gt;&amp;lt;your-github-id&gt;.github.io&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; remote &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; origin https://github.com/&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-github-id&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;/&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-github-id&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.github.io
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; init &lt;span class=&quot;token builtin class-name&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; remote &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; origin https://github.com/&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-github-id&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;/&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-github-id&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.github.io
 &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; gh-pages --save-dev
-gatsby build
-gh-pages -d public -b main &lt;span class=&quot;token comment&quot;&gt;# it deploys the contents in the &apos;public&apos; directory to the main branch&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+gatsby build &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; gh-pages -d public -b main &lt;span class=&quot;token comment&quot;&gt;# it deploys the contents in the &apos;public&apos; directory to the main branch&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
