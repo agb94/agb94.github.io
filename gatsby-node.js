@@ -1,17 +1,19 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const _ = require('lodash')
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
+  const tagTemplate = path.resolve(`./src/templates/tags.js`)
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
+        postsRemark: allMarkdownRemark(
           sort: {fields: [frontmatter___date], order: ASC}
           limit: 1000
           filter: {frontmatter: {show: {eq: true}}}
@@ -21,6 +23,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+          }
+        }
+        tagsGroup: allMarkdownRemark(
+          filter: {frontmatter: {show: {eq: true}}},
+          limit: 1000
+        ) {
+          group(field: frontmatter___tags) {
+            fieldValue
           }
         }
       }
@@ -35,7 +45,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
+  const posts = result.data.postsRemark.nodes
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -48,7 +58,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: post.fields.slug,
-        component: blogPost,
+        component: blogPostTemplate,
         context: {
           id: post.id,
           previousPostId,
@@ -56,6 +66,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
       })
     })
+  }
+
+  const tags = result.data.tagsGroup.group
+  if (tags.length > 0) {
+     // Make tag pages
+    tags.forEach(tag => {
+      createPage({
+        path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+        component: tagTemplate,
+        context: {
+          tag: tag.fieldValue,
+        },
+      })
+    }) 
   }
 }
 
@@ -108,6 +132,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       date: Date @dateformat
       show: Boolean
+      tags: [String]
     }
 
     type Fields {

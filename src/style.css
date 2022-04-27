@@ -331,6 +331,30 @@ a:focus {
   font-family: var(--font-heading);
 }
 
+.blog-post tags {
+  display: block;
+}
+
+.blog-post tags .title {
+  font-style: italic;
+  display: inline-flex;
+  font-size: var(--fontSize-0);
+  color: var(--color-text-light);
+  margin: var(--spacing-1);
+}
+
+.blog-post tags .tag {
+  display: inline-flex;
+  border-radius: 0%;
+  border: 1px var(--color-primary) solid;
+  color: var(--color-primary);
+  font-size: var(--fontSize-0);
+  padding: 0px 5px 0px 5px;
+  font-weight: var(--fontWeight-bold);
+  margin: var(--spacing-1);
+  text-decoration: none;
+}
+
 .blog-post-nav ul {
   margin: var(--spacing-0);
 }

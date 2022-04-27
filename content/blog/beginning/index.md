@@ -3,6 +3,7 @@ title: New Beginnings
 date: "2022-04-26T13:40:32.169Z"
 description: 👆 Check out my first blog post!
 show: true
+tags: ["gatsby", "react"]
 ---
 
 This is my first post on this new blog. How exciting! 😋
