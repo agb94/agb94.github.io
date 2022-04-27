@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-tags-js",
-    "path": "/tags/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Gabin An 🪴"}},"allMarkdownRemark":{"group":[{"fieldValue":"gatsby","totalCount":1},{"fieldValue":"react","totalCount":1}]}},"pageContext":{}},
-    "staticQueryHashes": []}
