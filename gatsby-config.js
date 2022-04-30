@@ -62,12 +62,12 @@ module.exports = {
         // icon: `${__dirname}/images/plant.png`
       }
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-T0FD8DP327`,
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
