@@ -1,7 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
+
 // Components
-import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 
 const tagTemplate = ({ pageContext, data, location }) => {
@@ -13,7 +14,7 @@ const tagTemplate = ({ pageContext, data, location }) => {
   } tagged with "${tag}"`
   return (
     <Layout location={location} title={siteTitle}>
-    <Helmet title={tagHeader} />
+    <Seo title={tagHeader} />
     <div>
       <h1>{tagHeader}</h1>
       <Link to="/tags">See all tags</Link>
