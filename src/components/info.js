@@ -17,6 +17,7 @@
              github
              website
              cv
+             cvdate
            }
          }
        }
@@ -28,29 +29,30 @@
  
    return (
      <div className="info">
-       {author?.email && (
-          <p class="item">
-            <a href={`mailto:${author.email}`}>[Email]</a>
-          </p>
-       )}
+       <p className="item">
+         <i className="fa fa-envelope"></i> Email: <a href={`mailto:${author.email}`}>{author.email}</a>
+       </p>
 
        {author?.github && (
-          <p class="item">
-            <a href={`https://github.com/${author.github}`}>[GitHub]</a>
-          </p>
-       )}
-
-       {author?.website && (
-          <p class="item">
-            <a href={author.website}>[Research Profile]</a>
+          <p className="item">
+            <i className="fa fa-github"></i> GitHub: <a href={`https://github.com/${author.github}`}>{author.github}</a>
           </p>
        )}
 
        {author?.cv && (
-          <p class="item">
-            / <a href={author.cv}>[CV]</a>
+          <p className="item">
+          <i className="fa fa-file-pdf"></i> CV: <a href={author.cv}>Download</a> (Last updated on {author.cvdate})
           </p>
        )}
+
+
+       {author?.website && (
+          <p className="item">
+            <i className="fa fa-house-user"></i> Research Website: <a href={author.website}>{author.website}</a>
+         </p>
+       )}
+
+
      </div>
    )
  }

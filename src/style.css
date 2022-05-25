@@ -293,24 +293,26 @@ a:focus {
 
 .bio p {
   margin-bottom: var(--spacing-0);
+  font-size: var(--fontSize-2);
 }
 
 .bio-avatar {
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
-  min-width: 80px;
-  border-radius: 100%;
+  min-width: 120px;
+  /* border-radius: 100%; */
 }
 
 .info {
-  display: flex;
-  justify-content: center;
   margin-bottom: var(--spacing-16);
 }
 
 .info .item{
-  margin-bottom: var(--spacing-0);
-  margin-right: var(--spacing-1);
+  margin-bottom: var(--spacing-2);
+}
+
+.info .item .fa{
+  min-width: 1.3em;
 }
 
 .info .item a{

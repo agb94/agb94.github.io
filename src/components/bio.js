@@ -33,9 +33,9 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/gabin-pic.png"
-        width={80}
-        height={80}
+        src="../images/img-nobg.png"
+        width={120}
+        height={120}
         quality={100}
         alt="Profile picture"
       />
