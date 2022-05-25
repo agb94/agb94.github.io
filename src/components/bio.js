@@ -34,8 +34,8 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/img-nobg.png"
-        width={120}
-        height={120}
+        width={100}
+        height={100}
         quality={100}
         alt="Profile picture"
       />

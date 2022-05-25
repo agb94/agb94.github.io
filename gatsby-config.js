@@ -5,11 +5,11 @@ module.exports = {
     title: `Gabin An 🪴`,
     author: {
       name: `Gabin An`,
-      summary: `I'm a third-year PhD student at COINSE Lab, KAIST. I like building new things, reading, riding a roadbike, and raising plants at home. 🌱`,
+      summary: `I'm a third-year PhD student at COINSE Lab, KAIST. I like building new things, reading, riding a roadbike, and raising plants 🌱.`,
       email: `hi.gabin@gmail.com`,
       github: `agb94`,
       website: `https://coinse.io/members/gabin`,
-      cv: `CV-v20220525.pdf`,
+      cv: `cv.pdf`,
       cvdate: `May 25th, 2022`,
     },
     description: `Gabin's (virtual) home`,
