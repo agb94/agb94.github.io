@@ -10,7 +10,7 @@ module.exports = {
       github: `agb94`,
       website: `https://coinse.io/members/gabin`,
       cv: `cv.pdf`,
-      cvdate: `May 25th, 2022`,
+      cvdate: `May 30th, 2022`,
     },
     description: `Gabin's (virtual) home`,
     siteUrl: `https://agb94.github.io/`,
